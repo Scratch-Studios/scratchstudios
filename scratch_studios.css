@@ -101,6 +101,57 @@ nav ul li a:hover::after{
 
 }
 
+/* responsive nav */
+@media(max-width:850px){
+
+    nav{
+        left: 10px;
+        border-radius: 20px;
+    }
+    label img{ 
+        width: 180px;
+        margin: -8px;
+        
+    }
+    nav ul li a{
+        font-size: 10px;
+        
+    }
+
+    .checkbtn{
+        display: block;
+
+    }
+    ul{
+        position: fixed;
+        width: 50%;
+        height: auto;
+        background:#11224e;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .3s;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+       
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: black;
+    }
+   
+    #check:checked~ul{
+        left: 0;
+
+    }
+}
+
 /* css for home */
 .Home{
     height: 500px;
@@ -136,6 +187,29 @@ nav ul li a:hover::after{
     text-align: justify;
     font-size: 20px;
     color: white;
+}
+
+/* responsive for home */
+@media (max-width: 768px) {
+    .Home {
+        margin-top: 80px;
+        padding: 35px;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+        gap: 10px; /* Adjust gap for vertical layout */
+    }
+
+    .content-left .logo {
+        margin-top: 0;
+        width: 200px;
+        height: 200px; /* Further reduce logo size */
+    }
+
+    .content-right {
+        font-size: 5px; /* Smaller font for mobile devices */
+        
+          
+    }
 }
 
 /* css for services */
@@ -228,6 +302,39 @@ nav ul li a:hover::after{
     text-align: center;
     margin-top: 10px;
     
+}
+
+/* responsive for service  */
+@media(max-width:850px){
+
+    .container .title{
+        width: 340px;
+        
+    }
+   .container .title h2{
+
+        font-size: 22px;
+        color: white;
+   }
+   #innerbox{
+    width: 250px;
+    
+   }
+   #innerbox-right{
+    width: 250px;
+    
+   }
+   h1{
+    font-size: 20px;
+    margin-top: 15px;
+   }
+   #icon-right{
+    width: 50px;
+   }
+   #icon-left{
+    width: 50px;
+   }
+
 }
 
 /* animation for services */
@@ -518,19 +625,8 @@ h1 {
     border-radius: 20px;
     height: auto;
     width: 1100px;
-    margin: 150px 120px 0 200px;
+    margin: 150px 120px 80px 200px;
     box-shadow: 2px 2px 2px 2px #5c83c4;
-  }
-  
-  /* Background Video */
-  .background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Ensures the video stays behind content */
   }
   
   .contact-container {
@@ -609,12 +705,7 @@ h1 {
   .social-media a:hover {
     color: #00ffcc;
   }
-  .background-video-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;  /* Full viewport height */
-    overflow: hidden;
-  }
+
  
   .background-video {
     position: absolute;
@@ -637,6 +728,14 @@ h1 {
         margin: 0;
         font-family: Arial, sans-serif;
         color: #333;
+        background:rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        border: 1px solid #5c83c4;
+        border-radius: 20px;
+        height: auto;
+        width: 1100px;
+        margin: 150px 120px 0 200px;
+        box-shadow: 2px 2px 2px 2px #5c83c4;
         
         
         height: auto; /* Ensure the background covers the entire viewport */
@@ -647,14 +746,15 @@ h1 {
     .team-container {
         text-align: center;
         padding: 50px;
-        background: rgba(255, 255, 255, 0.8);
         border-radius: 10px;
         margin: 20px;
     }
     
     .team-heading {
         font-size: 28px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
     }
     
     .team-members {
@@ -666,14 +766,16 @@ h1 {
     
     .team-member {
         text-align: center;
-        width: 150px;
+        width: 100px;
+        border: 3px solid white;
+        border-radius: 15px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.8);
     }
     
     .team-photo {
-        width: 100%;
         border-radius: 50%;
-        border: 2px solid #ff7e5f;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     }
     
     .member-name {

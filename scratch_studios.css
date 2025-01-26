@@ -111,7 +111,7 @@ nav ul li a:hover::after{
     justify-content: center;
     gap:70px;
     margin-top: 150px;
-    margin-left: 125px;
+    margin-left: 200px;
     box-shadow: 2px 2px 2px 1px #5c83c4;
     background:rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
@@ -146,13 +146,13 @@ nav ul li a:hover::after{
     align-items: center;
     padding: 50px;
     box-sizing: border-box; 
-     background:rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(30px);
+    background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
     border: 1px solid #5c83c4;
     border-radius: 20px;
     height: auto;
     width: 1100px;
-    margin: 150px 120px 0 125px;
+    margin: 150px 120px 0 200px;
     box-shadow: 2px 2px 2px 2px #5c83c4; 
    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -274,6 +274,14 @@ nav ul li a:hover::after{
     padding: 50px;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid #5c83c4;
+    border-radius: 20px;
+    height: auto;
+    width: 1100px;
+    margin: 150px 120px 0 200px;
+    box-shadow: 2px 2px 2px 2px #5c83c4;
 }
 
 
@@ -410,12 +418,7 @@ h1 {
         color: aliceblue;
     
     }
-    body{
-    background-color: FEF8DD;
-        background-size: cover;
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
+
     
     .container {
         margin-top: 200px;
@@ -500,7 +503,7 @@ h1 {
     box-sizing: border-box;
   }
   
-  .adhil {
+  #Contact {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #fff;
@@ -509,6 +512,14 @@ h1 {
     align-items: center;
     justify-content: center;
     position: relative;
+    background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid #5c83c4;
+    border-radius: 20px;
+    height: auto;
+    width: 1100px;
+    margin: 150px 120px 0 200px;
+    box-shadow: 2px 2px 2px 2px #5c83c4;
   }
   
   /* Background Video */
@@ -523,7 +534,6 @@ h1 {
   }
   
   .contact-container {
-    background: rgba(0, 0, 0, 0.7);
     padding: 20px 30px;
     border-radius: 10px;
     width: 90%;
@@ -632,56 +642,7 @@ h1 {
         height: auto; /* Ensure the background covers the entire viewport */
     }
     
-    /* About Section */
-    .about-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 50px;
-        animation: fadeIn 2s ease-in-out;
-    }
-    
-    .logo-container {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation: slideInLeft 2s ease-in-out;
-    }
-    
-    .logo {
-        max-width: 200px;
-        border-radius: 50%;
-    }
-    
-    .content-container {
-        flex: 2;
-        animation: slideInRight 2s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .content-heading {
-        font-size: 36px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    
-    .content-description {
-        font-size: 18px;
-        line-height: 1.6;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .content-image {
-        max-width: 100%;
-        border-radius: 10px;
-        margin-top: 20px;
-    }
-    
+
     /* Team Section */
     .team-container {
         text-align: center;

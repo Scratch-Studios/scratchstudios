@@ -105,6 +105,7 @@ nav ul li a:hover::after{
 @media(max-width:850px){
 
     nav{
+        width: 90%;
         left: 10px;
         border-radius: 20px;
     }
@@ -128,7 +129,7 @@ nav ul li a:hover::after{
         height: auto;
         background:#11224e;
         top: 80px;
-        left: -100%;
+        right: -100%;
         text-align: center;
         transition: all .3s;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -147,7 +148,7 @@ nav ul li a:hover::after{
     }
    
     #check:checked~ul{
-        left: 0;
+        right: 0;
 
     }
 }
@@ -162,7 +163,7 @@ nav ul li a:hover::after{
     justify-content: center;
     gap:70px;
     margin-top: 150px;
-    margin-left: 200px;
+    margin-left: 130px;
     box-shadow: 2px 2px 2px 1px #5c83c4;
     background:rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
@@ -192,6 +193,7 @@ nav ul li a:hover::after{
 /* responsive for home */
 @media (max-width: 768px) {
     .Home {
+        width: 100%;
         margin-top: 80px;
         padding: 35px;
         flex-direction: column; /* Stack content vertically */
@@ -304,9 +306,12 @@ nav ul li a:hover::after{
     
 }
 
-/* responsive for service  */
+/* responsive for services  */
 @media(max-width:850px){
 
+    #services{
+        width: 100%;
+    }
     .container .title{
         width: 340px;
         
@@ -497,6 +502,10 @@ h1 {
 }
 
 @media(max-width:850px){
+
+    #project{
+        width: 100%;
+    }
     #outbox{
         border-radius: 0%;
         border: 3px solid whitesmoke;
@@ -603,15 +612,9 @@ h1 {
 }
  
 
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+/* css for Contact */
   #Contact {
-    font-family: Arial, sans-serif;
+   
     line-height: 1.6;
     color: #fff;
     height: 100vh;
@@ -637,17 +640,17 @@ h1 {
     text-align: center;
   }
   
-  h1 {
+  .contact-container h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
   }
   
-  p {
+  .contact-container p {
     font-size: 1.2rem;
     margin-bottom: 20px;
   }
   
-  button {
+  .contact-container button {
     padding: 10px 20px;
     font-size: 1rem;
     color: #fff;
@@ -658,7 +661,7 @@ h1 {
     transition: background-color 0.3s;
   }
   
-  button:hover {
+  .contact-container button:hover {
     background-color: #0056b3;
   }
   
@@ -671,31 +674,11 @@ h1 {
     margin-bottom: 10px;
   }
   
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
-  
+ 
   .social-media a {
     color: #00ffcc;
     text-decoration: none;
     list-style: none;
-  }
-  
-  .social-media a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Social Media Icons */
-  .social-media {
-    margin-top: 20px;
-  }
-  
-  .social-media a {
     margin: 0 10px;
     font-size: 2rem;
     color: #fff;
@@ -703,10 +686,15 @@ h1 {
   }
   
   .social-media a:hover {
+    text-decoration: underline;
     color: #00ffcc;
   }
-
- 
+  
+  /* Social Media Icons */
+  .social-media {
+    margin-top: 20px;
+  }
+  
   .background-video {
     position: absolute;
     top: 0;
@@ -723,10 +711,17 @@ h1 {
     padding: 50px;
     color: white;  /* Adjust text color to ensure it's readable over the video */
   }
+
+
+
+  
+  /* css for About */
+
+
     /* General Styles */
     #About {
-        margin: 0;
-        font-family: Arial, sans-serif;
+       
+        
         color: #333;
         background:rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(20px);
@@ -822,6 +817,9 @@ h1 {
     
     /* Responsive Styles for Mobile (max-width: 768px) */
     @media (max-width: 768px) {
+        #About{
+            width: 100%;
+        }
         .about-container {
             flex-direction: column;
             padding: 20px;

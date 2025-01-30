@@ -10,95 +10,122 @@
  
 </head>
 <body>
-    <header>
+  <header>
     <nav>
         <input type="checkbox" id="check">
 
         <label for="check" class="bar">
             <i class="fa-solid fa-list"></i>
         </label>
+        <label for="check" class="bar-close"></label>
         
         <label><img src="Logo-white.png" alt="logo" ></label>
         <ul>
+            
             <li><a href="#Home"><i class="fa-solid fa-house"></i>Home</a></li>
             <li><a href="#services"><i class="fa-solid fa-gear"></i>services</a></li>
-            <li><a href="#Projects"><i class="fa-solid fa-chart-simple"></i> Projects</a></li>
+            <li><a href="#Project"><i class="fa-solid fa-chart-simple"></i> Projects</a></li>
             <li><a href="#About"><i class="fa-solid fa-address-card"></i>Our Team</a></li>
             <li><a href="#Contact"><i class="fa-solid fa-user"></i>Contact</a></li>    
         </ul>
     </nav>
   </header>
 
+
   <main>
 
     <section id="Home">
                 
-    <div class="Home">
-
-        <div class="content-left">
-            <img src="logo.png" alt="" class="main-logo ">
-        </div>
-
-        <div class="content-right">
-           <h2> Welcome to Scratch Studios!</h2>
-            <p>    At Scratch Studios, we believe in starting from the ground up, turning fresh ideas into powerful digital solutions. Our focus is on delivering creativity, innovation, and dynamic experiences tailored to today’s needs. Most importantly, we care about our clients’ satisfaction and success more than just making a profit. Let’s build something amazing together—from scratch! </p>
-        </div>
-    </div>
-
-
-    </section>
-
+      <div class="Home">
+  
+          <div class="content-left">
+              <img src="logo.png" alt="" class="main-logo ">
+          </div>
+  
+          <div class="content-right">
+             <h2> Welcome to Scratch Studios!</h2>
+              <p>    At Scratch Studios, we believe in starting from the ground up, turning fresh ideas into powerful digital solutions. Our focus is on delivering creativity, innovation, and dynamic experiences tailored to today’s needs. Most importantly, we care about our clients’ satisfaction and success more than just making a profit. Let’s build something amazing together—from scratch! </p>
+          </div>
+      </div>
+      </section>
+  
     <section id="services">
-        
-            <div class="title">
-                <h2>Our services and Products</h2>
-            </div>
-            <div id="outerbox">
-                <img src="WEB DESIGN ICON.png" alt="" id="icon-left">
-                <div id="innerbox">
-                    <h1>Web Design</h1>
-                </div>
-            </div>
+      <div class="title">
+          <h2>Our Services and Products</h2>
+      </div>
 
-            <div id="outerbox">
-                <img src="BRANDDESIGN ICON.png" alt="" id="icon-right">
-                <div id="innerbox-right">
-                    <h1>Brand Design</h1>
-                </div>
-            </div>
+      <div class="outerbox">
+          <img src="WEB DESIGN ICON.png" alt="Web Design Icon" class="icon-left">
+          <div class="innerbox">
+              <h1>Web Design</h1>
+          </div>
+      </div>
 
-            <div id="outerbox">
-                <img src="CONTENT WRITING ICON.png" alt="" id="icon-left">
-                <div id="innerbox">
-                    <h1>Content Writing</h1>
-                </div>
-            </div>
+      <div class="outerbox">
+          <img src="BRANDDESIGN ICON.png" alt="Brand Design Icon" class="icon-right">
+          <div class="innerbox-right">
+              <h1>Brand Design</h1>
+          </div>
+      </div>
 
-            <div id="outerbox">
-                <img src="DIGITALMARKETING ICON.png" alt="" id="icon-right">
-                <div id="innerbox-right">
-                    <h1>Digital Marketing</div>
-                    </div></h1>
+      <div class="outerbox">
+          <img src="CONTENT WRITING ICON.png" alt="Content Writing Icon" class="icon-left">
+          <div class="innerbox">
+              <h1>Content Writing</h1>
+          </div>
+      </div>
 
-            <div id="outerbox">
-                <img src="PRINT DESIGN ICON.png" alt="" id="icon-left">
-                <div id="innerbox">
-                    <h1>Print Design</h1>
-                </div>
-            </div>
+      <div class="outerbox">
+          <img src="DIGITALMARKETING ICON.png" alt="Digital Marketing Icon" class="icon-right">
+          <div class="innerbox-right">
+              <h1>Digital Marketing</h1>
+          </div>
+      </div>
 
-            <div id="outerbox">
-                <img src="GAME DEVELOPMENT ICON.png" alt="" id="icon-right">
-                <div id="innerbox-right">
-                    <h1>Game Development</h1>
-                </div>
-            </div>
+      <div class="outerbox">
+          <img src="PRINT DESIGN ICON.png" alt="Print Design Icon" class="icon-left">
+          <div class="innerbox">
+              <h1>Print Design</h1>
+          </div>
+      </div>
 
-        </div> 
+      <div class="outerbox">
+          <img src="GAME DEVELOPMENT ICON.png" alt="Game Development Icon" class="icon-right">
+          <div class="innerbox-right">
+              <h1>Game Development</h1>
+          </div>
+      </div>
+ 
 
-    </section>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const outerBoxes = document.querySelectorAll(".outerbox");
+      const options = {
+          root: null, // viewport
+          threshold: 0.2, // trigger when 20% is visible
+      };
 
-    <section id="Projects">
+      const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry, index) => {
+              if (entry.isIntersecting) {
+                  let delay = index * 700; // Reduce delay to 500ms
+                  entry.target.style.animation = index % 2 === 0 
+                      ? `slideInLeft 1.5s ease-in-out ${delay}ms forwards`
+                      : `slideInRight 1.5s ease-in-out ${delay}ms forwards`;
+                  observer.unobserve(entry.target);
+              }
+          });
+      }, options);
+
+      outerBoxes.forEach(box => {
+          observer.observe(box);
+      });
+  });
+
+</script>
+</section>
+
+        <section id="Projects">
         <div class="slider" id="slider">
             
             <h1>Our Projects</h1>

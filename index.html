@@ -24,7 +24,7 @@
             
             <li><a href="#Home"><i class="fa-solid fa-house"></i>Home</a></li>
             <li><a href="#services"><i class="fa-solid fa-gear"></i>services</a></li>
-            <li><a href="#Project"><i class="fa-solid fa-chart-simple"></i> Projects</a></li>
+            <li><a href="#Projects"><i class="fa-solid fa-chart-simple"></i> Projects</a></li>
             <li><a href="#About"><i class="fa-solid fa-address-card"></i>Our Team</a></li>
             <li><a href="#Contact"><i class="fa-solid fa-user"></i>Contact</a></li>    
         </ul>
@@ -32,7 +32,6 @@
   </header>
 
 
-  <main>
     <section id="Home">
                 
       <div class="Home">
@@ -48,81 +47,81 @@
       </div>
       </section>
   
-    <section id="services">
-      <div class="title">
-          <h2>Our Services and Products</h2>
-      </div>
-
-      <div class="outerbox">
-          <img src="WEB DESIGN ICON.png" alt="Web Design Icon" class="icon-left">
-          <div class="innerbox">
-              <h1>Web Design</h1>
-          </div>
-      </div>
-
-      <div class="outerbox">
-          <img src="BRANDDESIGN ICON.png" alt="Brand Design Icon" class="icon-right">
-          <div class="innerbox-right">
-              <h1>Brand Design</h1>
-          </div>
-      </div>
-
-      <div class="outerbox">
-          <img src="CONTENT WRITING ICON.png" alt="Content Writing Icon" class="icon-left">
-          <div class="innerbox">
-              <h1>Content Writing</h1>
-          </div>
-      </div>
-
-      <div class="outerbox">
-          <img src="DIGITALMARKETING ICON.png" alt="Digital Marketing Icon" class="icon-right">
-          <div class="innerbox-right">
-              <h1>Digital Marketing</h1>
-          </div>
-      </div>
-
-      <div class="outerbox">
-          <img src="PRINT DESIGN ICON.png" alt="Print Design Icon" class="icon-left">
-          <div class="innerbox">
-              <h1>Print Design</h1>
-          </div>
-      </div>
-
-      <div class="outerbox">
-          <img src="GAME DEVELOPMENT ICON.png" alt="Game Development Icon" class="icon-right">
-          <div class="innerbox-right">
-              <h1>Game Development</h1>
-          </div>
-      </div>
- 
-
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-      const outerBoxes = document.querySelectorAll(".outerbox");
-      const options = {
-          root: null, // viewport
-          threshold: 0.2, // trigger when 20% is visible
-      };
-
-      const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry, index) => {
-              if (entry.isIntersecting) {
-                  let delay = index * 700; // Reduce delay to 500ms
-                  entry.target.style.animation = index % 2 === 0 
-                      ? `slideInLeft 1.5s ease-in-out ${delay}ms forwards`
-                      : `slideInRight 1.5s ease-in-out ${delay}ms forwards`;
-                  observer.unobserve(entry.target);
-              }
-          });
-      }, options);
-
-      outerBoxes.forEach(box => {
-          observer.observe(box);
-      });
-  });
-
-</script>
-</section>
+      <section id="services">
+        <div class="title">
+            <h2>Our Services and Products</h2>
+        </div>
+  
+        <div class="outerbox">
+            <img src="WEB DESIGN ICON.png" alt="Web Design Icon" class="icon-left">
+            <div class="innerbox">
+                <p>Web Design</p>
+            </div>
+        </div>
+  
+        <div class="outerbox">
+            <img src="BRANDDESIGN ICON.png" alt="Brand Design Icon" class="icon-right">
+            <div class="innerbox-right">
+                <p>Brand Design</p>
+            </div>
+        </div>
+  
+        <div class="outerbox">
+            <img src="CONTENT WRITING ICON.png" alt="Content Writing Icon" class="icon-left">
+            <div class="innerbox">
+                <p>Content Writing</p>
+            </div>
+        </div>
+  
+        <div class="outerbox">
+            <img src="DIGITALMARKETING ICON.png" alt="Digital Marketing Icon" class="icon-right">
+            <div class="innerbox-right">
+                <p>Digital Marketing</p>
+            </div>
+        </div>
+  
+        <div class="outerbox">
+            <img src="PRINT DESIGN ICON.png" alt="Print Design Icon" class="icon-left">
+            <div class="innerbox">
+                <p>Print Design</p>
+            </div>
+        </div>
+  
+        <div class="outerbox">
+            <img src="GAME DEVELOPMENT ICON.png" alt="Game Development Icon" class="icon-right">
+            <div class="innerbox-right">
+                <p>Game Development</p>
+            </div>
+        </div>
+   
+  
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const outerBoxes = document.querySelectorAll(".outerbox");
+        const options = {
+            root: null, // viewport
+            threshold: 0.2, // trigger when 20% is visible
+        };
+  
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    let delay = index * 700; // Reduce delay to 500ms
+                    entry.target.style.animation = index % 2 === 0 
+                        ? `slideInLeft 1.5s ease-in-out ${delay}ms forwards`
+                        : `slideInRight 1.5s ease-in-out ${delay}ms forwards`;
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+  
+        outerBoxes.forEach(box => {
+            observer.observe(box);
+        });
+    });
+  
+  </script>
+  </section>
 
 <section id="Projects">
   <div class="slider" id="slider">
@@ -183,92 +182,81 @@
 </section>
 
 
+<section id="About">
+  <!-- Team Section -->
+     <div class="team-container">
+         <h2 class="team-heading">Our Team</h2>
+         <div class="team-members">
+             <!-- Team Member -->
+             <div class="team-member">
+                 <img src="vignesh.jpg" alt="Team Member 1" class="team-photo">
+                 <h3 class="member-name">VIGNESH B</h3>
+                 <p class="member-role">CEO</p>
+             </div>
+             <div class="team-member">
+                 <img src="muthu.jpg" alt="Team Member 5" class="team-photo">
+                 <h3 class="member-name">MUTHURAMAN S</h3>
+                 <p class="member-role">RELATIONSHIP MANAGER</p>
+             </div>
+             <div class="team-member">
+                 <img src="sarfaraz.jpg" alt="Team Member 2" class="team-photo">
+                 <h3 class="member-name">SARFARAZ SHAREEF U Y</h3>
+                 <p class="member-role">DESIGNER</p>
+             </div>
+             <div class="team-member">
+                 <img src="nveen.jpg" alt="Team Member 4" class="team-photo">
+                 <h3 class="member-name">NAVEEN S</h3>
+                 <p class="member-role">PROGRAMMER</p>
+             </div>
+             <!-- Add more team members as needed -->
+             <div class="team-member">
+                 <img src="nandhey.jpg" alt="Team Member 3" class="team-photo">
+                 <h3 class="member-name">NANDHINI P</h3>
+                 <p class="member-role">PROGRAMMER</p>
+             </div>
+             <div class="team-member">
+                 <img src="aadhil.jpg" alt="Team Member 5" class="team-photo">
+                 <h3 class="member-name">MOHAMMED ADIL M</h3>
+                 <p class="member-role">PROGRAMMER</p>
+             </div>
+             <div class="team-member">
+                 <img src="priyanka.jpg" alt="Team Member 6" class="team-photo">
+                 <h3 class="member-name">PRIYANKA W</h3>
+                 <p class="member-role">PROGRAMMER</p>
+             </div>
+         </div>
+     </div>
+ 
+ 
+</section>
+<section id="Contact">
+  <div class="contact-container">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you!</p>
+      <button onclick="location.href='https://forms.gle/nCAVgT4gbBEgu59b7'">Click to Contact</button>
 
-    <section id="About">
-         <!-- Team Section -->
-            <div class="team-container">
-                <h2 class="team-heading">Our Team</h2>
-                <div class="team-members">
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <img src="vignesh.jpg" alt="Team Member 1" class="team-photo">
-                        <h3 class="member-name">VIGNESH B</h3>
-                        <p class="member-role">CEO</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="muthu.jpg" alt="Team Member 5" class="team-photo">
-                        <h3 class="member-name">MUTHURAMAN S</h3>
-                        <p class="member-role">RELATIONSHIP MANAGER</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="sarfaraz.jpg" alt="Team Member 2" class="team-photo">
-                        <h3 class="member-name">SARFARAZ SHAREEF U Y</h3>
-                        <p class="member-role">DESIGNER</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="nveen.jpg" alt="Team Member 4" class="team-photo">
-                        <h3 class="member-name">NAVEEN S</h3>
-                        <p class="member-role">PROGRAMMER</p>
-                    </div>
-                    <!-- Add more team members as needed -->
-                    <div class="team-member">
-                        <img src="nandhey.jpg" alt="Team Member 3" class="team-photo">
-                        <h3 class="member-name">NANDHINI P</h3>
-                        <p class="member-role">PROGRAMMER</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="aadhil.jpg" alt="Team Member 5" class="team-photo">
-                        <h3 class="member-name">MOHAMMED ADIL M</h3>
-                        <p class="member-role">PROGRAMMER</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="priyanka.jpg" alt="Team Member 6" class="team-photo">
-                        <h3 class="member-name">PRIYANKA W</h3>
-                        <p class="member-role">PROGRAMMER</p>
-                    </div>
-                </div>
-            </div>
-        
-        
-    </section>
-   
-  </main>
+      <div class="locations">
+          <h2>SCRATCH STUDIOS INDIA</h2>
+      </div>
 
-   <footer>
-    
-    <section id="Contact">
+      <div class="owner-info">
+          <p><strong>CEO:</strong> VIGNESH</p>
+          <p><strong>Manager:</strong> SARFARAZ</p>
+      </div>
 
-        <div class="contact-container">
-          <h1>Contact Us</h1>
-          <p>We’d love to hear from you!</p>
-          <button onclick="location.href='https://forms.gle/nCAVgT4gbBEgu59b7'">Click to Contact</button>
-      
-          <div class="locations">
-            <h2>SCRATCH STUDIOS INDIA</h2>
-          </div>
-      
-          <div class="owner-info">
-            <h3></h3>
-            <P>CEO: VIGNESH</P>
-            <p>MANAGER: SARFARAZ </p>
-          </div>
-      
-          <!-- Social Media Section -->
-          <div class="social-media">
-            <h3>Follow Us</h3>
-            <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/scratchstudios_india?igsh=aWpvdzhsN3hjcnhq" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://x.com/ScratchStudios1" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.threads.net/@scratchstudios_india?__pwa=1" target="_blank"><i class="fa-brands fa-threads"></i></a>
-          </div>
-        </div>
-      
-      
-          </section>
-      
-
-
-   </footer>
+      <!-- Social Media Section -->
+      <div class="social-media">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/scratchstudios_india" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/ScratchStudios1" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.threads.net/@scratchstudios_india" target="_blank"><i class="fa-brands fa-threads"></i></a>
+      </div>
+  </div>
+</section>
 
 </body>
 </html>
+
+
+

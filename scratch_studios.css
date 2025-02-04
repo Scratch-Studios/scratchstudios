@@ -460,7 +460,8 @@ nav ul li a:hover::after{
 
 @media (max-width: 768px) {
     #services{
-        padding: 20px;
+        padding: 10px;
+       padding-top: 50px;
     }
     .outerbox {
         flex-direction: row;
@@ -470,6 +471,7 @@ nav ul li a:hover::after{
     .icon-left, .icon-right {
         margin-bottom: 10px;
     }
+
 
     .title h2 {
         font-size: 1.6rem;
@@ -488,9 +490,10 @@ nav ul li a:hover::after{
 @media (max-width: 480px) {
     #services{
         padding: 10px;
+        padding-top: 50px;
     }
     .title h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .outerbox {
@@ -758,6 +761,15 @@ nav ul li a:hover::after{
 }
 
 /* Responsive Styles */
+
+@media(max-width:480px){
+    
+
+    .team-heading{
+        font-size: 1.7rem;
+    }
+
+}
 @media (max-width: 768px) {
     #About {
         max-width: 95%;
@@ -902,7 +914,7 @@ h2, h3 {
 
 @media (max-width: 480px) {
     .contact-container h1 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .contact-container p {

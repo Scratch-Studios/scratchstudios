@@ -563,8 +563,8 @@ nav ul li a:hover::after{
   }
   
   .slide img {
-    width: 20%;
-    max-width: 100px;
+    width: 70%;
+    max-width: 200px;
     padding: 10px;
   }
   
@@ -572,7 +572,7 @@ nav ul li a:hover::after{
     text-align: center;
     font-size: 1.5rem;
     color: white;
-    padding: 5px;
+    padding: 20px;
     width: 90%;
     height: auto;
     max-width: 650px;
@@ -600,7 +600,7 @@ nav ul li a:hover::after{
     }
   
     .slide img {
-      width: 18%;
+      width: 30%;
     }
   
     .slide p {
@@ -631,7 +631,7 @@ nav ul li a:hover::after{
     }
   
     .slide img {
-      width: 25%;
+      width: 40%;
     }
   
     .slide p {
@@ -658,7 +658,7 @@ nav ul li a:hover::after{
     }
   
     .slide img {
-      width: 35%;
+      width: 50%;
     }
   
     .slide p {
